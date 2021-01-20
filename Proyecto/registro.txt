@@ -1,0 +1,20 @@
+const Sequelize = require('sequelize')
+const db = require('../database/db')
+
+module.exports = db.sequelize.define(
+	'registro',
+	{
+	cumpleanos : {
+			type: Sequelize.DATE
+		},
+	sueldo : {
+			type: Sequelize.INTEGER
+		},
+	fecha : {
+			type: Sequelize.DATE
+		},
+	},
+	{
+		timestamps: false
+	}
+)

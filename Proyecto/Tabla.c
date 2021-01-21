@@ -148,4 +148,6 @@ void GuardarArchivo()
 	printf(BLUE "Generando...%s\n",RESETCOL);
 	if(generarArchivos(cabeza))
 		printf(GREEN"Generado.\n");
+	else
+		printf(RED "Error generando archivos.\n");
 }
